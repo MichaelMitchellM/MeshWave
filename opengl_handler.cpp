@@ -7,7 +7,7 @@ opengl_handler::opengl_handler(){
 	glBindVertexArray(vertex_array_id_);
 
 	// generate mesh
-	mesh_gen mesh{ 200u, 200u, 0.1f };
+	mesh_gen mesh{ 200u, 200u, 0.25f };
 	num_verts_ = mesh.num_verts();
 
 	glGenBuffers(1, &vertexbuffer_id_);
@@ -28,7 +28,7 @@ opengl_handler::opengl_handler(){
 	mvp_ = proj_ * view_ * model_;
 
 	theta_ = 0.0f;
-	incr_val_ = 0.1f;
+	incr_val_ = 0.01f;
 
 }
 

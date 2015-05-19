@@ -3,7 +3,7 @@
 
 camera::camera()
 	:
-	pos_{ 0.0f, 0.0f, -5.0f },
+	pos_{ 0.0f, 0.0f, -10.0f },
 	up_{ 0.0f, 0.0f, 1.0f }
 {
 	ori_ = glm::normalize(glm::angleAxis(-3.1415926f / 2.0f, glm::vec3{ 1.0f, 0.0f, 0.0f }));

@@ -10,8 +10,8 @@ out vec3 color;
 void main(){
   color = my_color;
   if(in_color.x == 0.0f){
-      color.z = my_color.y;
-      color.y = my_color.x;
-      color.x = my_color.z;
+      color.z = my_color.x;
+      color.y = my_color.z;
+      color.x = my_color.y;
   }
 }
